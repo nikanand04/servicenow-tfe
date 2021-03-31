@@ -3,7 +3,6 @@ variable "project" {
 }
 
 
-
 variable "region" {
   default = "us-central1"
 }
@@ -12,13 +11,19 @@ variable "zone" {
   default = "us-central1-c"
 }
 
-variable "environment" {
-  type    = string
-  default = "dev"
+variable "instance_name" {
+  default = "terraform-instance"
 }
 
-variable "machine_types" {
+variable "machine_type" {
   default = "f1-micro"
 }
 
+variable "network" {
+  default = "default"
+}
 
+
+variable "boot_image" {
+  default = "cos-cloud/cos-stable"
+}
