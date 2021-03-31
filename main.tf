@@ -73,9 +73,9 @@ resource "google_storage_bucket" "example_bucket" {
 #     }
 #   }
 
-  network_interface {
-    network = google_compute_network.vpc_network.name
-    access_config {
-    }
-  }
+ # network_interface {
+ #   network = google_compute_network.vpc_network.name
+ #   access_config {
+ #   }
+ # }
 
